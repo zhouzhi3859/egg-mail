@@ -1,4 +1,4 @@
-# egg-email
+# egg-mail
 
 
 
