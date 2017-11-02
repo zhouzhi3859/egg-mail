@@ -16,16 +16,16 @@ This plugin based on [emailjs](https://github.com/eleith/emailjs)
 
 ## Configuration
 
-Change `${app_root}/config/plugin.js` to enable redis plugin:
+Change `${app_root}/config/plugin.js` to enable email plugin:
 
 ```js
-exports.redis = {
+exports.email = {
   enable: true,
   package: 'egg-email',
 };
 ```
 
-Configure redis information in `${app_root}/config/config.default.js`:
+Configure email information in `${app_root}/config/config.default.js`:
 
 **Single Client**
 
@@ -33,9 +33,9 @@ Configure redis information in `${app_root}/config/config.default.js`:
 config.email = {
   client: {
     username: *your email account*,
-		password: *your email password*,
-		host: *you email smtp server ip*,
-		sender: *what accout are you use to send email,like:XXX@XXX.com*,
+    password: *your email password*,
+    host: *you email smtp server ip*,
+    sender: *what accout are you use to send email,like:XXX@XXX.com*,
   },
 }
 ```
