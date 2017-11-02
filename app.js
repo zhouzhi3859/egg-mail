@@ -2,11 +2,11 @@
 const Email = require('./lib/email');
 
 module.exports = app => {
-  let email = new Email(app.config.email);
+  let mail = new Email(app.config.mail);
   
-  app.email = {
+  app.mail = {
    async sendEmail(title,info,reciver) {
-     let result = await email.sendEmail(title,info,reciver);
+     let result = await mail.sendEmail(title,info,reciver);
      return result;
    }
    
