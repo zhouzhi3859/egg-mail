@@ -1,5 +1,5 @@
 'use strict';
 
-exports.email = {
+exports.mail = {
 
 };
