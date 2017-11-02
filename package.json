@@ -16,7 +16,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "homepage": "https://github.com/zhouzhi3859/blob/master/README.md",
+  "homepage": "https://github.com/zhouzhi3859/egg-mail/blob/master/README.md",
   "keywords": [
     "egg",
     "eggPlugin",
@@ -27,9 +27,9 @@
   "name": "egg-email",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhouzhi3859/egg-email.git"
+    "url": "https://github.com/zhouzhi3859/egg-mail.git"
   },
   "scripts": {
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
