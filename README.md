@@ -7,7 +7,7 @@ Email smtp client based on emailjs for egg framework
 ## Install
 
 ```bash
-$ npm i egg-email --save
+$ npm i egg-mail --save
 ```
 
 Email Plugin for egg, support egg application send email.
@@ -19,9 +19,9 @@ This plugin based on [emailjs](https://github.com/eleith/emailjs)
 Change `${app_root}/config/plugin.js` to enable email plugin:
 
 ```js
-exports.email = {
+exports.mail = {
   enable: true,
-  package: 'egg-email',
+  package: 'egg-mail',
 };
 ```
 
@@ -30,7 +30,7 @@ Configure email information in `${app_root}/config/config.default.js`:
 **Single Client**
 
 ```javascript
-config.email = {
+config.mail = {
   client: {
     username: *your email account*,
     password: *your email password*,
@@ -52,8 +52,8 @@ module.exports = app => {
     async index() {
       const { ctx, app } = this;
       // sendEmail
-      ctx.body = await app.email.sendEmail('Title','Content','Reciver');
-      // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
+      ctx.body = await app.mail.sendEmail('Title','Content','Reciver');
+      // ctx.body = await app.mail.sendEmail('test','testContent','test@test.com');
     }
   };
 };
@@ -62,7 +62,7 @@ module.exports = app => {
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/zhouzhi3859/egg-email/issues).
+Please open an issue [here](https://github.com/zhouzhi3859/egg-mail/issues).
 
 ## License
 
