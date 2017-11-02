@@ -24,7 +24,7 @@
     "email"
   ],
   "license": "MIT",
-  "name": "egg-email",
+  "name": "egg-mail",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhouzhi3859/egg-mail.git"
