@@ -19,7 +19,7 @@ This plugin based on [emailjs](https://github.com/eleith/emailjs)
 Change `${app_root}/config/plugin.js` to enable email plugin:
 
 ```js
-exports.mail = {
+exports.email = {
   enable: true,
   package: 'egg-mail',
 };
@@ -30,7 +30,7 @@ Configure email information in `${app_root}/config/config.default.js`:
 **Single Client**
 
 ```javascript
-config.mail = {
+config.email = {
   username: *your email account*,
   password: *your email password*,
   host: *you email smtp server ip*,
