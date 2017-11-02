@@ -31,12 +31,10 @@ Configure email information in `${app_root}/config/config.default.js`:
 
 ```javascript
 config.mail = {
-  client: {
-    username: *your email account*,
-    password: *your email password*,
-    host: *you email smtp server ip*,
-    sender: *what accout are you use to send email,like:XXX@XXX.com*,
-  },
+  username: *your email account*,
+  password: *your email password*,
+  host: *you email smtp server ip*,
+  sender: *what accout are you use to send email,like:XXX@XXX.com*,
 }
 ```
 
