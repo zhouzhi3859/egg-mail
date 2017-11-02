@@ -1,0 +1,35 @@
+{
+  "author": {
+    "name": "zhouzhi3859"
+  },
+  "bugs": {
+    "url": "https://github.com/eggEmail/issues"
+  },
+  "dependencies": {
+    "emailjs": "^1.0.12"
+  },
+  "deprecated": false,
+  "description": "Email plugin for egg",
+  "eggPlugin": {
+    "name": "email"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/zhouzhi3859/blob/master/README.md",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "email"
+  ],
+  "license": "MIT",
+  "name": "egg-email",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouzhi3859/egg-email.git"
+  },
+  "scripts": {
+  },
+  "version": "1.0.0"
+}
