@@ -50,8 +50,8 @@ module.exports = app => {
     async index() {
       const { ctx, app } = this;
       // sendEmail
-      ctx.body = await app.mail.sendEmail('Title','Content','Reciver');
-      // ctx.body = await app.mail.sendEmail('test','testContent','test@test.com');
+      ctx.body = await app.email.sendEmail('Title','Content','Reciver');
+      // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
     }
   };
 };
