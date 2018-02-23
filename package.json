@@ -30,7 +30,6 @@
     "type": "git",
     "url": "https://github.com/zhouzhi3859/egg-mail.git"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "version": "1.0.6"
 }
