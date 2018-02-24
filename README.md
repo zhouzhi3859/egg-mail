@@ -50,13 +50,22 @@ module.exports = app => {
     async index() {
       const { ctx, app } = this;
       // sendEmail
-      ctx.body = await app.email.sendEmail('Title','Content','Reciver');
+      ctx.body = await app.email.sendEmail('Title','Content','Reciver','Attachment');
       // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
     }
   };
 };
 ```
 
+## Example Attachment Array
+
+```
+[
+  {data:"<html>i <i>hope</i> this works!</html>", alternative:true},
+  {path:"path/to/file.zip", type:"application/zip", name:"renamed.zip"}
+]
+```
+more detail please click [here](https://github.com/eleith/emailjs#example-usage---html-emails-and-attachments)
 
 ## Questions & Suggestions
 
