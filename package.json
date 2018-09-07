@@ -38,10 +38,7 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "eslint --format node_modules/eslint-friendly-formatter .",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter mochawesome --reporter-options reportDir=reporter,reportFilename=index.html",
-    "ci": "npm run lint && npm run cov",
-    "cov": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec"
+    "test": "echo 1"
   },
   "version": "1.0.8"
 }
