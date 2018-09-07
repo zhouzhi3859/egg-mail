@@ -1,6 +1,10 @@
 # egg-mail
 
-
+![](https://img.shields.io/badge/version-1.0.9-green.svg?)
+[![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
+[![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
+![](https://img.shields.io/badge/license-MIT-000000.svg)
+[![Build Status](https://www.travis-ci.org/zhouzhi3859/egg-mail.svg?branch=master)](https://www.travis-ci.org/zhouzhi3859/egg-mail)
 
 Email smtp client based on emailjs for egg framework
 
