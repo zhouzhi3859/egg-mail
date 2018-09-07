@@ -14,7 +14,14 @@ interface IOption {
 	username: string;
 }
 
-// export function sendEmail(title: string, info: string, reciver: string): Promise<IReturnData>;
+interface Iattachment {
+  data?: string,
+  alternative?: boolean,
+  path?: string,
+  type?: string,
+  name?: string
+}
+
 export interface email {
-	sendEmail(title: string, info: string, reciver: string): Promise<IReturnData>;
+	sendEmail(title: string, info: string, reciver: string, attachment?: Array<Iattachment>): Promise<IReturnData>;
 }

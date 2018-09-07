@@ -2,9 +2,13 @@ logs/
 npm-debug.log
 node_modules/
 coverage/
+reporter/
+test/
+package-lock.json
 .idea/
 .git/
 run/
 .DS_Store
 *.swp
+.travis.yml
 

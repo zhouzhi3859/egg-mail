@@ -9,6 +9,10 @@
   "dependencies": {
     "emailjs": "^1.0.12"
   },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-friendly-formatter": "^4.0.1",
+  },
   "deprecated": false,
   "description": "Email plugin for egg",
   "eggPlugin": {
@@ -30,6 +34,14 @@
     "type": "git",
     "url": "https://github.com/zhouzhi3859/egg-mail.git"
   },
-  "scripts": {},
-  "version": "1.0.7"
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --format node_modules/eslint-friendly-formatter .",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter mochawesome --reporter-options reportDir=reporter,reportFilename=index.html",
+    "ci": "npm run lint && npm run cov",
+    "cov": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec"
+  },
+  "version": "1.0.8"
 }

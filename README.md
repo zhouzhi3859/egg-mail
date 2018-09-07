@@ -29,7 +29,7 @@ Configure email information in `${app_root}/config/config.default.js`:
 
 **Single Client**
 
-```javascript
+```js
 config.email = {
   username: *your email account*,
   password: *your email password*,
@@ -50,8 +50,12 @@ module.exports = app => {
     async index() {
       const { ctx, app } = this;
       // sendEmail
-      ctx.body = await app.email.sendEmail('Title','Content','Reciver','Attachment');
+      ctx.body = await app.email.sendEmail('Title','Content','Reciver');
       // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
+      // or
+      // sendEmail with attachment
+      ctx.body = await app.email.sendEmail('Title','Content','Reciver','Attachment');
+      // ctx.body = await app.email.sendEmail('test','testContent','test@test.com', [ ... ]);
     }
   };
 };
@@ -70,6 +74,9 @@ more detail please click [here](https://github.com/eleith/emailjs#example-usage-
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/zhouzhi3859/egg-mail/issues).
+
+## Typescript
+you can visit this [example](https://github.com/zhouzhi3859/iMagazineServerTS).
 
 ## License
 
