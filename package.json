@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "eslint": "^5.4.0",
-    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-friendly-formatter": "^4.0.1"
   },
   "deprecated": false,
   "description": "Email plugin for egg",
