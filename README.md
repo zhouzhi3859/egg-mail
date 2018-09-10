@@ -1,6 +1,6 @@
 # egg-mail
 
-![](https://img.shields.io/badge/version-1.0.9-green.svg?)
+![](https://img.shields.io/badge/version-1.0.10-green.svg?)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
@@ -48,21 +48,20 @@ In controller, you can use `app.email.sendEmail` to send email.
 
 ```js
 // app/controller/home.js
-
-module.exports = app => {
-  return class HomeController extends app.Controller {
-    async index() {
-      const { ctx, app } = this;
-      // sendEmail
-      ctx.body = await app.email.sendEmail('Title','Content','Reciver');
-      // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
-      // or
-      // sendEmail with attachment
-      ctx.body = await app.email.sendEmail('Title','Content','Reciver','Attachment');
-      // ctx.body = await app.email.sendEmail('test','testContent','test@test.com', [ ... ]);
-    }
-  };
+const Controller = require('egg').Controller;
+class HomeController extends Controller {
+  async index() {
+    const { ctx, app } = this;
+    // sendEmail
+    ctx.body = await app.email.sendEmail('Title','Content','Reciver');
+    // ctx.body = await app.email.sendEmail('test','testContent','test@test.com');
+    // or
+    // sendEmail with attachment
+    ctx.body = await app.email.sendEmail('Title','Content','Reciver','Attachment');
+    // ctx.body = await app.email.sendEmail('test','testContent','test@test.com', [ ... ]);
+  }
 };
+module.exports = HomeController;
 ```
 
 ## Example Attachment Array
