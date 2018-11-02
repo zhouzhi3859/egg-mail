@@ -25,3 +25,9 @@ interface Iattachment {
 export interface email {
 	sendEmail(title: string, info: string, reciver: string, attachment?: Array<Iattachment>): Promise<IReturnData>;
 }
+
+declare module 'egg' {
+    interface Application {
+        email: email
+    }
+}
