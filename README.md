@@ -35,7 +35,7 @@ Configure email information in `${app_root}/config/config.default.js`:
 
 ```js
 config.email = {
-  username: *your email account*,
+  user: *your email account*,
   password: *your email password*,
   host: *you email smtp server ip or domain name*,
   sender: *what accout are you use to send email,like:XXX@XXX.com*,
