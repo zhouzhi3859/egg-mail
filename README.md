@@ -1,6 +1,6 @@
 # egg-mail
 
-![](https://img.shields.io/badge/version-1.0.10-green.svg?)
+![](https://img.shields.io/badge/version-1.0.12-green.svg?)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
